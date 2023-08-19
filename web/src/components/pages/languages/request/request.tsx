@@ -76,11 +76,15 @@ const LanguagesRequestFormPage = () => {
 
     setIsSendingRequest(true);
     try {
-      await api.sendLanguageRequest({
+
+      const res = await api.sendLanguageRequest({
         email: emailValue.trim(),
         languageInfo: languageInfoValue.trim(),
         languageLocale: navigator?.language,
       });
+
+      console.log(res);
+      
 
       // redirect to languages/success path if email sent correctly
       history.push(toLocaleRoute(URLS.LANGUAGE_REQUEST_SUCCESS));

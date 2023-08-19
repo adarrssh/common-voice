@@ -50,6 +50,8 @@ export const actions = {
     ) => {
       const { api } = getState();
       const allLanguages = await api.fetchAllLanguages();
+      console.log({allLanguages});
+      
 
       //get obj of native names, default to language code
       const nativeNames = allLanguages.reduce((names: any, language) => {

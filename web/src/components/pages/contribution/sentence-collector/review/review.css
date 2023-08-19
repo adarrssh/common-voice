@@ -186,7 +186,7 @@
                 min-width: 150px;
 
                 @media (--sm-down) {
-                    min-width: 100px;
+                    min-width: 120px;
                 }
 
                 & svg {
@@ -194,6 +194,17 @@
                         transform: rotateY(180deg);
                     }
                 }
+            }
+
+            & .skip-text {
+                @media (--sm-down){
+
+                    max-width: 70px; /* Set an appropriate value for your layout */
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                color: pink;
             }
         }
 
