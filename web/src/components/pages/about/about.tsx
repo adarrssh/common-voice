@@ -21,7 +21,8 @@ interface PropsFromState {
 
 const About: React.FC<PropsFromState> = ({ isSubscribedToMailingList }) => {
   const activeSection = useActiveSection(Object.values(SECTIONS));
-
+  console.log('about');
+  
   return (
     <Page className="about-main-container">
       {[

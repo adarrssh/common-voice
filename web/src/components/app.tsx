@@ -280,6 +280,8 @@ LocalizedPage = withRouter(
 );
 
 const App = () => {
+  console.log('hey');
+  
   const history = createBrowserHistory();
 
   return (

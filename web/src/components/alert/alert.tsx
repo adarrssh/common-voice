@@ -48,11 +48,7 @@ export default class Alert extends React.Component<Props, {}> {
 
   render() {
     return (
-      <div className={'alert ' + this.props.type}>
-        {this.props.children}
-
-        <CloseIcon onClick={this.close} className="icon" />
-      </div>
+      <h1>my alert</h1>
     );
   }
 }
